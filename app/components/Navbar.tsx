@@ -2,6 +2,13 @@
 import Link from "next/link";
 import { useState } from "react";
 
+const navLinks = [
+  { name: "About", href: "/about" },
+  { name: "Services", href: "/services" },
+  { name: "Work", href: "/work" },
+  { name: "Contact", href: "/contact" },
+];
+
 const Navbar = () => {
   const [navIsOpened, setNavIsOpened] = useState(false);
   const closeNavbar = () => {
@@ -132,7 +139,7 @@ const Navbar = () => {
         <nav className="relative mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 flex gap-x-5 justify-between items-center">
           <div className="flex items-center min-w-max">
             <Link
-              href="#"
+              href="/"
               className="text-xl font-semibold flex items-center gap-x-2"
             >
               <span className="flex">
@@ -140,7 +147,7 @@ const Navbar = () => {
                 <span className="w-3 h-6 rounded-r-full flex bg-pink-700 mt-2" />
               </span>
               <span className="text-lg text-gray-700 dark:text-gray-300">
-                Archix
+                Karmel
               </span>
             </Link>
           </div>
@@ -155,51 +162,21 @@ const Navbar = () => {
       `}
           >
             <ul className="flex flex-col lg:flex-row gap-6 lg:items-center text-gray-700 dark:text-gray-300 lg:w-full lg:justify-center">
-              <li>
-                <Link
-                  href="#"
-                  className="relative py-2.5 duration-300 ease-linear hover:text-pink-600 after:absolute after:w-full after:left-0 after:bottom-0 after:h-px after:rounded-md after:origin-left after:ease-linear after:duration-300 after:scale-x-0 hover:after:scale-100 after:bg-pink-600"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="relative py-2.5 duration-300 ease-linear hover:text-pink-600 after:absolute after:w-full after:left-0 after:bottom-0 after:h-px after:rounded-md after:origin-left after:ease-linear after:duration-300 after:scale-x-0 hover:after:scale-100 after:bg-pink-600"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="relative py-2.5 duration-300 ease-linear hover:text-pink-600 after:absolute after:w-full after:left-0 after:bottom-0 after:h-px after:rounded-md after:origin-left after:ease-linear after:duration-300 after:scale-x-0 hover:after:scale-100 after:bg-pink-600"
-                >
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="relative py-2.5 duration-300 ease-linear hover:text-pink-600 after:absolute after:w-full after:left-0 after:bottom-0 after:h-px after:rounded-md after:origin-left after:ease-linear after:duration-300 after:scale-x-0 hover:after:scale-100 after:bg-pink-600"
-                >
-                  Work
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="relative py-2.5 duration-300 ease-linear hover:text-pink-600 after:absolute after:w-full after:left-0 after:bottom-0 after:h-px after:rounded-md after:origin-left after:ease-linear after:duration-300 after:scale-x-0 hover:after:scale-100 after:bg-pink-600"
-                >
-                  Pricing
-                </Link>
-              </li>
+              {navLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="relative py-2.5 duration-300 ease-linear hover:text-pink-600 after:absolute after:w-full after:left-0 after:bottom-0 after:h-px after:rounded-md after:origin-left after:ease-linear after:duration-300 after:scale-x-0 hover:after:scale-100 after:bg-pink-600"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
             <div className="flex sm:items-center lg:min-w-max mt-10 lg:mt-0">
               <Link
                 href="#"
-                className="px-6 items-center h-12 rounded-3xl text-pink-700 border border-gray-100 dark:border-gray-800 dark:text-white bg-gray-100 dark:bg-gray-900 duration-300 ease-linear flex justify-center w-full sm:w-auto"
+                className="px-6 items-center h-12 rounded-3xl text-pink-700 border border-gray-100 dark:border-gray-800 dark:text-white dark:hover:bg-pink-700 bg-gray-100 dark:bg-gray-900 duration-300 ease-linear flex justify-center w-full sm:w-auto"
               >
                 Book a call
               </Link>
@@ -235,4 +212,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar
+export default Navbar;

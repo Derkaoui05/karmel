@@ -21,10 +21,10 @@ export default function HeroSection() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 w-full">
               <Link
-                href="#"
+                href="/work"
                 className="px-6 items-center h-12 rounded-3xl bg-pink-600 text-white duration-300 ease-linear flex justify-center w-full sm:w-auto"
               >
-                Get started
+                View Our Work
               </Link>
               <Link
                 href="#"
@@ -33,47 +33,7 @@ export default function HeroSection() {
                 Book a call
               </Link>
             </div>
-            <div className="mt-5 flex items-center justify-center flex-wrap gap-4 lg:justify-start w-full">
-              <Link href="#" target="_blank" rel="noreferer">
-                <span className="sr-only">org name</span>
-                <Image
-                  width={600}
-                  height={120}
-                  src="/microsoft.avif"
-                  alt="client name"
-                  className="h-10 w-auto"
-                />
-              </Link>
-              <Link href="#" target="_blank" rel="noreferer">
-                <span className="sr-only">org name</span>
-                <Image
-                  width={600}
-                  height={120}
-                  src="/microsoft.avif"
-                  alt="client name"
-                  className="h-10 w-auto "
-                />
-              </Link>
-              <Link href="#" target="_blank" rel="noreferer">
-                <span className="sr-only">org name</span>
-                <Image width={600}
-                  height={120}
-                  src="/microsoft.avif"
-                  alt="client name"
-                  className="h-10 w-auto"
-                />
-              </Link>
-              <Link href="#" target="_blank" rel="noreferer">
-                <span className="sr-only">org name</span>
-                <Image
-                  width={600}
-                  height={120}
-                  src="/microsoft.avif"
-                  alt="client name"
-                  className="h-10 w-auto"
-                />
-              </Link>
-            </div>
+           
           </div>
           <div className="flex aspect-square lg:aspect-auto lg:h-[35rem] relative">
             <div className="w-3/5 h-[80%] rounded-3xl overflow-clip border-8 border-gray-200 dark:border-gray-950 z-30">
@@ -82,7 +42,7 @@ export default function HeroSection() {
                 alt="buildind plan image"
                 width={1300}
                 height={1300}
-                className="w-full h-full object-cover bg-blend-color-dodge z-30"
+                className="w-full h-full object-cover z-30"
               />
             </div>
             <div className="absolute right-0 bottom-0 h-[calc(100%-50px)] w-4/5 rounded-3xl overflow-clip border-4 border-gray-200 dark:border-gray-800 z-10">
