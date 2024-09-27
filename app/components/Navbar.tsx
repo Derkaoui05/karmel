@@ -182,7 +182,7 @@ const Navbar = () => {
               </Link>
             </div>
           </div>
-          <div aria-hidden="true" className="flex items-center lg:hidden">
+          <div  className="flex items-center lg:hidden">
             <button
               onClick={() => {
                 toggleNavbar();

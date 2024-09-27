@@ -6,11 +6,18 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: "media",
+  darkMode: ["media", "class"],
   theme: {
-    extend: {
-    },
+  	extend: {
+  		borderRadius: {
+  			lg: 'var(--radius)',
+  			md: 'calc(var(--radius) - 2px)',
+  			sm: 'calc(var(--radius) - 4px)'
+  		},
+  		colors: {}
+  	}
   },
-  plugins: [],
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  plugins: [require("tailwindcss-animate")],
 };
 export default config;

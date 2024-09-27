@@ -33,7 +33,6 @@ export default function HeroSection() {
                 Book a call
               </Link>
             </div>
-           
           </div>
           <div className="flex aspect-square lg:aspect-auto lg:h-[35rem] relative">
             <div className="w-3/5 h-[80%] rounded-3xl overflow-clip border-8 border-gray-200 dark:border-gray-950 z-30">

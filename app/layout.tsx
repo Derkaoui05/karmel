@@ -16,7 +16,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "dadd website",
+  title: "KARMEL",
   description: "Developed By Derkaoui Yassir",
 };
 
