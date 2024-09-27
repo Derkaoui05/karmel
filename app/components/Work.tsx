@@ -10,7 +10,7 @@ const Work = () => {
             Our Work
           </span>
           <h2 className="text-3xl font-semibold text-blue-950 dark:text-gray-200 md:text-4xl xl:text-5xl leading-tight">
-            What We Offer
+            Take a look to our amazing works
           </h2>
           <div className="flex justify-center mt-2">
             <Link
