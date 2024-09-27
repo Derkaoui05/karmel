@@ -1,0 +1,128 @@
+import Image from "next/image";
+import Link from "next/link";
+
+const Work = () => {
+  return (
+    <section className="py-20">
+      <div className="max-w-7xl mx-auto px-5 sm:px-10 md:px-12 lg:px-5 space-y-16">
+        <div className="text-center max-w-2xl mx-auto space-y-5">
+          <span className="pl-5 relative before:absolute before:w-4 before:h-0.5 before:rounded-md before:left-0 before:top-1/2 before:bg-sky-700 dark:before:bg-sky-600 text-sky-700 dark:text-sky-500">
+            Our Work
+          </span>
+          <h2 className="text-3xl font-semibold text-blue-950 dark:text-gray-200 md:text-4xl xl:text-5xl leading-tight">
+            What We Offer
+          </h2>
+          <div className="flex justify-center mt-2">
+            <Link
+              href="#"
+              className="px-5 py-2.5 rounded-xl bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-blue-600 dark:text-gray-300 flex items-center gap-x-3"
+            >
+              See More
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="w-4 h-4"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </Link>
+          </div>
+        </div>
+        <div className="grid sm:grid-cols-2 gap-6 md:gap-8 lg:gap-10">
+          <div className="relative aspect-[5/3.8] rounded-lg overflow-hidden">
+            <Image
+              src="/hero1.jpg"
+              alt="project cover"
+              width={1300}
+              height={900}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-gray-800 dark:from-gray-900 flex flex-col justify-end p-5 space-y-5 text-gray-300">
+              <h1 className="font-semibold text-white text-2xl">
+                Landing page for agency
+              </h1>
+              <p className="text-gray-300 line-clamp-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Expedita perferendis repudiandae similique, quae velit
+                exercitationem veritatis ipsum natus molestias autem,
+                laudantium,
+              </p>
+              <div className="w-max">
+                <Link
+                  href="/projects"
+                  className="group flex items-center gap-x-3 text-gray-100 font-medium border-b border-gray-800"
+                >
+                  View details
+                  <span className="duration-300 ease-linear group-hover:pl-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      className="w-5 h-5"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="relative aspect-[5/3.8] rounded-lg overflow-hidden">
+            <Image
+              src="/hero1.jpg"
+              alt="project cover"
+              width={1300}
+              height={1000}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-gray-800 dark:from-gray-900 flex flex-col justify-end p-5 space-y-5 text-gray-300">
+              <h1 className="font-semibold text-white text-2xl">
+                Landing page for agency
+              </h1>
+              <p className="text-gray-300 line-clamp-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Expedita perferendis repudiandae similique, quae velit
+                exercitationem veritatis ipsum natus molestias autem,
+                laudantium,
+              </p>
+              <div className="w-max">
+                <Link
+                  href="/projects"
+                  className="group flex items-center gap-x-3 text-gray-100 font-medium border-b border-gray-800"
+                >
+                  View details
+                  <span className="duration-300 ease-linear group-hover:pl-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      className="w-5 h-5"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+export default Work;
