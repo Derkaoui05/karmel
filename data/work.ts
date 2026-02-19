@@ -6,12 +6,12 @@ export const worksData: work[] = [
     workName: 'Luxury Marble Living Room Flooring',
     workDescription:
       'Premium white marble flooring installation in a modern living room. The project focused on precise alignment, polished finishing, and seamless joints for a refined and durable result.',
-    workImage: '/hero1.jpg',
+    workImage: '/',
     workThumbnail: '/works/marble-living-room/thumb.jpg',
     workGallery: [
-      '/works/marble-living-room/1.jpg',
-      '/works/marble-living-room/2.jpg',
-      '/works/marble-living-room/3.jpg',
+      '/hero1.jpg',
+      '/hero1.jpg',
+      '/hero1.jpg',
     ],
   },
   {
