@@ -16,12 +16,11 @@ const Work = () => {
             Explore Our Recent Projects
           </h2>
         </div>
-
+      
         <div className="grid sm:grid-cols-2 gap-6 md:gap-8 lg:gap-10">
           {worksData.map((work) => (
             <div key={work.workId} className="relative aspect-[5/3.8] rounded-xl overflow-hidden">
               <Image src={work.workImage} alt={work.workName} fill className="object-cover" />
-
               {/* Permanent Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent flex flex-col justify-end p-6 text-white">
                 <h3 className="font-semibold text-xl">{work.workName}</h3>
