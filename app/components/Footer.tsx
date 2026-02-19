@@ -52,27 +52,17 @@ const footerBlocks: FooterBlock[] = [
     items: [
       {
         id: 1,
-        text: "Web design",
+        text: "Wall Tile Installation",
         link: "/",
       },
       {
         id: 2,
-        text: " Consultancy ",
+        text: "Laying Floor Tiles",
         link: "/",
       },
       {
         id: 3,
-        text: "Web Development",
-        link: "/",
-      },
-      {
-        id: 4,
-        text: "Mobile Development",
-        link: "/",
-      },
-      {
-        id: 5,
-        text: "Mobile Development",
+        text: "Marble Installation",
         link: "/",
       },
     ],
@@ -83,26 +73,21 @@ const footerBlocks: FooterBlock[] = [
     items: [
       {
         id: 1,
-        text: "About",
+        text: "Career",
         link: "/about",
       },
       {
         id: 2,
-        text: "Career",
-        link: "/career",
-      },
-      {
-        id: 3,
         text: "Contact",
         link: "/contact",
       },
       {
-        id: 4,
+        id: 3,
         text: "Services",
         link: "/services",
       },
       {
-        id: 5,
+        id: 4,
         text: "Work",
         link: "/work",
       },
@@ -185,10 +170,10 @@ const FooterBlock: React.FC = () => {
                 Karmel
               </span>
             </Link>
-            <p className="max-w-lg">
+            {/* <p className="max-w-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
               iusto est quia a
-            </p>
+            </p> */}
           </div>
           <nav className="flex-1 grid grid-cols-2 md:grid-cols-4 gap-10">
             {footerBlocks.map((footerBlock) => (
@@ -199,7 +184,7 @@ const FooterBlock: React.FC = () => {
       </div>
       <div className="py-3 bg-gray-100 dark:bg-gray-900">
         <div className="max-w-3xl mx-auto px-5 sm:px-10 md:px-12 lg:px-5 flex justify-center text-center">
-          <p> © 2023 Karmel. Developed By <span className="text-red-500"><Link href="https://derkaoui.netlify.app/">Derkaoui Yassir</Link></span> </p>
+          <p> © 2026 Karmel. Developed By <span className="text-red-500"><Link href="https://derkaoui.netlify.app/">Derkaoui Yassir</Link></span> </p>
         </div>
       </div>
     </footer>

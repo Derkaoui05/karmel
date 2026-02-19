@@ -1,6 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
-
+import Image from 'next/image';
+import Link from 'next/link';
 
 interface Post {
   id: number;
@@ -15,11 +14,7 @@ interface BlogCardProps {
   sumary: string;
 }
 
-const BlogCard: React.FC<BlogCardProps> = ({
-  cover,
-  title,
-  sumary,
-}) => {
+const BlogCard: React.FC<BlogCardProps> = ({ cover, title, sumary }) => {
   return (
     <div className="bg-white dark:bg-gray-950 border border-gray-100 dark:border-gray-900 px-px rounded-xl">
       <div className="rounded-[11px] bg-gray-200 dark:bg-gray-800 relative">
@@ -32,17 +27,9 @@ const BlogCard: React.FC<BlogCardProps> = ({
         />
       </div>
       <div className="mt-14 px-5 pb-5 space-y-4">
-
-        <h1 className="text-gray-900 dark:text-white text-xl font-semibold">
-          {title}
-        </h1>
-        <p className="text-gray-700 dark:text-gray-300 line-clamp-4">
-          {sumary}
-        </p>
-        <Link
-          href="#"
-          className="flex items-center gap-x-2 text-blue-600 dark:text-blue-400"
-        >
+        <h1 className="text-gray-900 dark:text-white text-xl font-semibold">{title}</h1>
+        <p className="text-gray-700 dark:text-gray-300 line-clamp-4">{sumary}</p>
+        <Link href="#" className="flex items-center gap-x-2 text-blue-600 dark:text-blue-400">
           Read more
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -64,25 +51,24 @@ const BlogCard: React.FC<BlogCardProps> = ({
 const posts: Post[] = [
   {
     id: 1,
-    cover: "/carre_mural.jpg",
-    
-    title: "Pose de Carrelage Mural",
+    cover: '/carre_mural.jpg',
+    title: 'Wall Tile Installation',
     sumary:
-      "Carrelage mural pour salles de bains : Spécialisation dans la pose de carrelage sur les murs de salles de bains, y compris les douches et les baignoires. Dosserets de cuisine : Installation de carreaux de mosaïque ou de carreaux décoratifs sur les dosserets de cuisine.",
+      'Bathroom wall tiles: Specializing in tile installation on bathroom walls, including showers and bathtubs. Kitchen backsplashes: Installation of mosaic tiles or decorative tiles on kitchen backsplashes.',
   },
   {
     id: 2,
-    cover: "/carre_sol.webp",
-    title: "Pose de Carrelage au Sol",
+    cover: '/carre_sol.webp',
+    title: 'Laying Floor Tiles',
     sumary:
-      "Carrelage de sol intérieur : Pose de carrelage sur les sols intérieurs dans des zones comme les cuisines, les salons, et les couloirs.Carrelage de sol extérieur : Spécialisation dans la pose de carrelage sur les terrasses, balcons, et autres espaces extérieurs.",
+      'Indoor floor tiling: Laying tiles on indoor floors in areas such as kitchens, living rooms, and hallways. Outdoor floor tiling: Specializing in laying tiles on terraces, balconies, and other outdoor spaces.',
   },
   {
     id: 3,
-    cover: "/pose_marbre.jpg",
-    title: "Pose de Marbre",
+    cover: '/pose_marbre.jpg',
+    title: 'Marble Installation',
     sumary:
-      "Marbre pour sols : Installation de dalles de marbre sur les sols, souvent utilisé dans les halls d'entrée, les salons, et les salles de bains de luxe. Marbre pour plans de travail : Pose de plaques de marbre sur les plans de travail de cuisine et de salle de bains. Marbre pour escaliers : Installation de marches et contremarches en marbre pour des escaliers intérieurs ou extérieurs. Carrelage et Marbre de Luxe Pose de marbre haut de gamme : Installation de marbre de haute qualité pour des projets de luxe, souvent dans des résidences haut de gamme ou des hôtels. Carrelage design et sur mesure : Conception et pose de carrelage personnalisé avec des motifs uniques ou des matériaux rares.",
+      'Marble flooring: Installation of marble tiles on floors, often used in entrance halls, living rooms, and luxury bathrooms. Marble countertops: Installation of marble slabs on kitchen and bathroom countertops. Marble for stairs: Installation of marble steps and risers for indoor or outdoor stairs. Luxury Tiles and Marble High-end marble installation: Installation of high-quality marble for luxury projects, often in high-end residences or hotels. Custom and designer tiles: Design and installation of custom tiles with unique patterns or rare materials.',
   },
 ];
 const Services: React.FC = () => {
@@ -110,11 +96,7 @@ const Services: React.FC = () => {
                 stroke="currentColor"
                 className="w-4 h-4"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
               </svg>
             </Link>
           </div>
