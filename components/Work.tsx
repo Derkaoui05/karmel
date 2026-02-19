@@ -8,7 +8,9 @@ const Work = () => {
     <section className="py-20">
       <div className="max-w-7xl mx-auto px-5 sm:px-10 md:px-12 lg:px-5 space-y-16">
         <div className="text-center max-w-2xl mx-auto space-y-5">
-          <span className="pl-5 relative before:absolute before:w-4 before:h-0.5 before:rounded-md before:left-0 before:top-1/2 before:bg-sky-700 dark:before:bg-sky-600 text-sky-700 dark:text-sky-500">
+          <span className="relative text-sky-700 dark:text-sky-500 px-3
+  before:content-[''] before:inline-block before:w-6 before:h-0.5 before:bg-sky-700 dark:before:bg-sky-600 before:align-middle before:mr-3
+  after:content-[''] after:inline-block after:w-6 after:h-0.5 after:bg-sky-700 dark:after:bg-sky-600 after:align-middle after:ml-3">
             Our Work
           </span>
 
