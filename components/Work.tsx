@@ -1,7 +1,7 @@
 import { ArrowUp } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { worksData } from '../../data/work';
+import { worksData } from '../data/work';
 
 const Work = () => {
   return (
