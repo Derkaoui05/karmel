@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 export default function About() {
   return (
@@ -15,52 +15,54 @@ export default function About() {
         </div>
         <div className="md:w-1/2 space-y-12 text-gray-700 dark:text-gray-300">
           <h1 className="text-gray-900 dark:text-white font-semibold text-2xl sm:text-3xl md:text-4xl">
-            We help drive your business forward faster
+            Craftsmanship That Brings Your Spaces to Life
           </h1>
           <p>
-            Welcome to{" "}
-            <span className="font-semibold">Tiles & Marble Pros</span>, your
-            trusted experts in laying premium tiles and marble flooring. With
-            years of experience, we take pride in delivering top-notch
-            craftsmanship, precision, and attention to detail in every project
-            we undertake.
+            Welcome to <span className="font-semibold">Tiles & Marble Pros</span>, specialists in
+            professional tile and marble installation. With years of hands-on experience, we deliver
+            precision, durability, and refined finishes tailored to each project.
           </p>
+
           <p>
-            Our services include custom tile layouts, intricate marble patterns,
-            and a wide selection of materials to meet your unique style
-            preferences and needs. Contact us today to transform your space with
-            timeless elegance and durability.
+            From residential homes to commercial spaces, we handle everything from floor tiling and
+            wall installations to custom marble designs. Our commitment to quality materials,
+            attention to detail, and clean execution ensures results that are both elegant and built
+            to last.
           </p>
           <ul className="space-y-4">
             <li className="flex items-center gap-x-4">
               <span className="w-5 h-5 text-sm flex items-center justify-center rounded-full bg-emerald-700 dark:bg-emerald-600 text-white">
                 ✓
               </span>
-              Web site Analysis
+              Professional Tile Installation (Walls & Floors)
             </li>
+
             <li className="flex items-center gap-x-4">
               <span className="w-5 h-5 text-sm flex items-center justify-center rounded-full bg-emerald-700 dark:bg-emerald-600 text-white">
                 ✓
               </span>
-              Free optimazation.
+              Premium Marble Finishing & Custom Designs
             </li>
+
             <li className="flex items-center gap-x-4">
               <span className="w-5 h-5 text-sm flex items-center justify-center rounded-full bg-emerald-700 dark:bg-emerald-600 text-white">
                 ✓
               </span>
-              Content Optimization.
+              Interior & Exterior Projects
             </li>
+
             <li className="flex items-center gap-x-4">
               <span className="w-5 h-5 text-sm flex items-center justify-center rounded-full bg-emerald-700 dark:bg-emerald-600 text-white">
                 ✓
               </span>
-              Web site Analysis
+              Precision Craftsmanship & Clean Execution
             </li>
+
             <li className="flex items-center gap-x-4">
               <span className="w-5 h-5 text-sm flex items-center justify-center rounded-full bg-emerald-700 dark:bg-emerald-600 text-white">
                 ✓
               </span>
-              Free optimazation.
+              Durable, Elegant & Long-Lasting Results
             </li>
           </ul>
         </div>

@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function HeroSection() {
   return (
@@ -8,16 +8,13 @@ export default function HeroSection() {
         <div className="mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 grid lg:grid-cols-2 lg:items-center gap-10">
           <div className="flex flex-col space-y-8 sm:space-y-10 lg:items-center text-center lg:text-left max-w-2xl md:max-w-3xl mx-auto">
             <h1 className=" font-semibold leading-tight text-teal-950 dark:text-white text-4xl sm:text-5xl lg:text-6xl">
-              Well be happy to take care of{" "}
+              Well be happy to take care of{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-tr from-pink-700 to-orange-800">
                 your work.
               </span>
             </h1>
             <p className=" flex text-gray-700 dark:text-gray-300 tracking-tight md:font-normal max-w-xl mx-auto lg:max-w-none">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem molestiae soluta ipsa incidunt expedita rem!
-              Suscipit molestiae voluptatem iure, eum alias nobis velit quidem
-              reiciendis saepe nostrum
+            With proven expertise in tile and marble installation, we help homeowners and businesses create modern, resistant, and aesthetically refined spaces.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 w-full">
               <Link
