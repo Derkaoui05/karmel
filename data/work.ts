@@ -14,6 +14,7 @@ export const worksData: work[] = [
       '/hero1.jpg',
     ],
   },
+  
   {
     workId: 2,
     workName: 'Modern Bathroom Wall Tiling',
